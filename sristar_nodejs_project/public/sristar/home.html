@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SriStar Gold Company</title>
+  <base href="/sristar/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff !important;
+      color: #333333;
+    }
+
+    /* Bilingual text styling */
+    .bilingual-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .telugu {
+      color: #a47300;
+      font-family: 'Noto Sans Telugu', sans-serif !important;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .english {
+      color: inherit;
+      margin-top: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 10px 20px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .contact-btn {
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 15px;
+    }
+
+    /* Carousel */
+    .carousel-item img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+
+    .carousel-caption .bilingual-text {
+      margin-bottom: 1rem;
+    }
+
+    .carousel-caption h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 2px 2px 10px #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .carousel-caption p {
+      font-size: 1rem;
+      color: #f1f1f1;
+      margin-bottom: 0;
+    }
+
+    /* Ticker Bar */
+    .ticker {
+      background-color: #d58d00;
+      color: #000;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 10;
+      white-space: nowrap;
+    }
+
+    .ticker span {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/LOGO (2).png" alt="SriStar Logo"></a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex align-items-center">
+        <a href="tel:6366333444" class="contact-btn"><i class="fa fa-phone"></i> 6366333444</a>
+        <a href="#" class="contact-btn ms-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.1.jpg" class="d-block w-100" alt="Gold Image 1">
+        <div class="carousel-caption">
+          <div class="bilingual-text">
+            <h1 class="telugu">శ్రీస్టార్ గోల్డ్ కంపెనీలోకి స్వాగతం</h1>
+            <h1 class="english">Welcome To SriStar Gold Company</h1>
+          </div>
+          <div class="bilingual-text">
+            <p class="telugu">త్వరిత నగదు లేదా లాభదాయకమైన పెట్టుబడులకు శ్రీస్టార్ గోల్డ్ కంపెనీ ఒకే ఒక్క పరిష్కారం.</p>
+            <p class="english">SriStar Gold Company is your one-stop solution for quick cash or profitable investments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/1.jpg" class="d-block w-100" alt="Gold Image 2">
+        <div class="carousel-caption">
+          <div class="bilingual-text">
+            <h1 class="telugu">నమ్మకమైన బంగారం భాగస్వాములు</h1>
+            <h1 class="english">Trusted Gold Partners</h1>
+          </div>
+          <div class="bilingual-text">
+            <p class="telugu">నమ్మకంతో మరియు పారదర్శకంగా మీ బంగారాన్ని మార్పిడి చేయండి లేదా అమ్మండి.</p>
+            <p class="english">Exchange or sell your gold with confidence and transparency.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/anjaliweb.jpg" class="d-block w-100" alt="Gold Image 3">
+        <div class="carousel-caption">
+          <h1>Best Gold Rates Everyday</h1>
+          <p>Get the best value for your gold with SriStar’s trusted experts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Services Section -->
+  <section class="container-fluid py-5 my-5">
+    <div class="row justify-content-center gy-5 text-center align-items-stretch">
+
+  <!-- Gold Rate Ticker -->
+  <div class="ticker">
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+      <span>Today's Rate - Gold 24k/1g ₹12850</span> |
+      <span>Silver 24k/1g ₹120</span> |
+      <span>Today's Rate - Gold 24k/1g ₹12850</span>
+    </marquee>
+  </div>
+
+<!-- CTA + FORM SECTION -->
+<section class="container cta-section py-5 my-5">
+    <div class="text-center mb-5">
+        <div class="bilingual-text">
+            <h2 class="telugu">బంగారానికి <strong>అత్యధిక</strong> ధర పొందండి. ప్రత్యేక ఆఫర్ కోసం ఇప్పుడే కాల్ చేయండి.</h2>
+            <h2 class="english">Get <strong>Highest</strong> Price of Gold Call Now to Get Special Offer.</h2>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-lg-6 mb-4">
+            <img src="images/necklace.webp" class="cta-img" alt="Gold Photo">
+        </div>
+
+        <!-- Right form -->
+        <div class="col-lg-6">
+            <div class="bilingual-text">
+                <p class="telugu">మేమే భారత ప్రభుత్వ ధృవీకరించిన బంగారం అప్రైజర్ (Gold Appraiser) కలిగిన ఏకైక బంగారం కొనుగోలుదారులం.</p>
+                <p class="english">We are the only Gold Buyer having Govt of India Certified Gold Appraiser.</p>
+            </div>
+           <div class="d-flex gap-3 mb-4">
+    <button class="btn cta-btn" style="background:#e3af55;" onclick="window.location.href='tel:+919876543210'">
+        Call Now
+    </button>
+    <button class="btn cta-btn" style="background:#d28e5a;" onclick="window.open('https://wa.me/919876543210', '_blank')">
+        Whatsapp Us
+    </button>
+</div>
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Your Name">
+                <input type="text" class="form-control mb-3" placeholder="Phone Number">
+                <select class="form-select mb-4">
+                    <option>Choose here</option>
+                    <option>We Buy Gold</option>
+                    <option>We Sell Gold</option>
+                    <option>We Release Pledged Gold</option>
+                    <option>We Rent Gold</option>
+                </select>
+                <button class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll(".service-card");
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add("show");
+            }, 200 * index); // stagger animation
+        });
+    });
+</script>
+
+      <style>
+        /* Services section styles */
+    .services-section {
+      padding: 100px 0;
+      background-color: #faf9f4;
+    }
+    /* Space below Services header */
+    .services-section h2 {
+      margin-bottom: 2.5rem;
+      font-weight: 700;
+    }
+    .service-card {
+      border-radius: 10px;
+      background: #fff;
+      padding: 16px; /* reduced padding to make card smaller */
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+      position: relative;
+      max-width: 320px; /* limit width so card appears smaller */
+      margin: 0 auto; /* center inside column */
+    }
+    .service-icon {
+      width: 80px; /* smaller icon */
+      height: 80px;
+      background: #f2c230;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -50px auto 12px auto; /* less overlap and spacing */
+      font-size: 32px;
+    }
+        .service-title{
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .cta-section{
+            padding: 80px 0;
+        }
+        .cta-img{
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .cta-btn{
+            padding: 12px 30px;
+            border: none;
+            font-size: 18px;
+        }
+        .submit-btn{
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            background-color: #e3c663;
+            border: none;
+        }
+
+         .telugu-text {
+        font-family: 'Noto Sans Telugu', sans-serif !important;
+        color: #a47300;
+        font-weight: 600;
+    }
+
+    .telugu-para {
+        font-family: 'Noto Sans Telugu', sans-serif !important;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+  .service-card {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.95);
+    padding: 12px; /* compact padding for smaller cards */
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+    transform: translateY(18px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card .bilingual-text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .service-card .telugu {
+    margin-bottom: 0.4rem;
+    font-size: 1rem; /* slightly smaller */
+  }
+
+  .service-card .english {
+    font-size: 0.98rem; /* slightly smaller */
+  }
+
+  .service-card.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+    </style>
+</head>
+<body>
+
+<!-- Services Header and wrapper: provides spacing from CTA -->
+<section class="container services-section py-5 my-5">
+  <h2 class="text-center mb-4">Services</h2>
+  <div class="row justify-content-center gy-5 text-center align-items-stretch">
+
+    <!-- CARD 1 -->
+<div class="col-lg-3 col-md-6 d-flex">
+  <div class="service-card h-100 w-100">
+            <div class="service-icon mx-auto">💰</div>
+
+            <div class="bilingual-text">
+                <div class="telugu">
+                    <h4 class="mt-3">మేము బంగారం కొనుగోలు చేస్తాము</h4>
+                    <p>పాత/కొత్త బంగారం లేదా ఆభరణాలను న్యాయమైన మరియు అత్యుత్తమ ధరకు కొనుగోలు చేస్తాము.</p>
+                </div>
+                <div class="english">
+                    <h5 class="fw-bold">We Buy Gold</h5>
+                    <p>We buy gold jewellery at the best market price in a safe and transparent way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+<div class="col-lg-3 col-md-6 d-flex">
+  <div class="service-card h-100 w-100">
+            <div class="service-icon mx-auto">⛓️</div>
+            <div class="bilingual-text">
+                <div class="telugu">
+                    <h4 class="mt-3">మేము బంగారం అమ్ముతాము</h4>
+                    <p>వింటేజ్ & తాజా డిజైన్లు మార్కెట్ కంటే తక్కువ ధరకే అందుబాటులోకి తెస్తాము.</p>
+                </div>
+                <div class="english">
+                    <h5 class="fw-bold">We Sell Gold</h5>
+                    <p>We provide a wide collection of premium jewellery at below market price.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+<div class="col-lg-3 col-md-6 d-flex">
+  <div class="service-card h-100 w-100">
+            <div class="service-icon mx-auto">📈</div>
+            <div class="bilingual-text">
+                <div class="telugu">
+                    <h4 class="mt-3">తాకట్టు బంగారం విడుదల</h4>
+                    <p>బ్యాంకు / ఫైనాన్స్ / పాన్‌షాప్‌లో ఉన్న తాకట్టు బంగారాన్ని వేగంగా విడుదల చేస్తాము.</p>
+                </div>
+                <div class="english">
+                    <h5 class="fw-bold">We Release Pledged Gold</h5>
+                    <p>We release pledged gold from banks and financiers with minimum charges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+<div class="col-lg-3 col-md-6 d-flex">
+  <div class="service-card h-100 w-100">
+            <div class="service-icon mx-auto">🤝</div>
+
+            <div class="bilingual-text">
+                <div class="telugu">
+                    <h4 class="mt-3">బంగారం అద్దెకు ఇవ్వడం</h4>
+                    <p>పెళ్లిళ్లు, వేడుకలు మరియు ప్రత్యేక సందర్భాలకు బంగారాన్ని అద్దెకు అందిస్తాము.</p>
+                </div>
+                <div class="english">
+                    <h5 class="fw-bold">We Rent Gold</h5>
+                    <p>We offer gold jewellery on rent for weddings and special events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Banner Image</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .banner-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Image Section -->
+  <section class="py-5 my-5">
+    <div class="banner-container">
+      <img src="images/create.072edf12e825c4ef0b67.png" alt="Gold Banner" class="img-fluid">
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Returns Card</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <style>
+    /* Background for Gold Returns Card section - replace image path as needed */
+    .gold-card-section {
+      background-image: url('images/bag-apply.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 60px 0;
+    }
+
+    /* optional dark overlay for readability */
+    .gold-card-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      pointer-events: none;
+    }
+
+    .gold-card-section .container { position: relative; z-index: 2; }
+  </style>
+
+  <section class="gold-card-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-md-6 text-center">
+          <img src="images/card.feff0f0504a35e8d005d.webp" alt="Gold Returns Card" class="img-fluid card-image">
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-6 text-light">
+          <h1 class="fw-bold mb-4 title">
+            INTRODUCING THE NEW<br />
+            GOLD RETURNS CARD
+          </h1>
+
+          <p class="lead">
+            We are thrilled to introduce the enhanced Gold Returns Card,
+            an exclusive privilege card offered exclusively by
+            <strong></strong>.
+          </p>
+
+          <p>
+            This card offers a 4-year validity period and an array of benefits
+            that will elevate your gold ownership experience to unprecedented
+            heights.
+          </p>
+
+          <a href="#" class="btn btn-gold mt-3">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Branches Section -->
+  <section class="branches-section py-5 my-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Branches</h2>
+      
+      <div class="row g-4">
+        <!-- Branch 1: Bangalore -->
+        <div class="col-lg-3 col-md-6">
+          <div class="branch-card h-100 ai-effect">
+            <div class="branch-image">
+              <img src="images/banglore.webp" alt="Bangalore Branch" class="img-fluid">
+            </div>
+            <div class="branch-content">
+              <h4 class="branch-city">BANGALORE</h4>
+              <p class="branch-brief">18th Cross, Malleshwaram</p>
+              <p class="branch-detail">280/1, Anniamma Arcade, Sampige Road, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560003</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=280/1+Anniamma+Arcade+Sampige+Road+18th+Cross+Rd+Malleshwaram+Bengaluru+Karnataka+560003" 
+                 target="_blank" 
+                 class="btn-get-directions">
+                GET DIRECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 2: Chennai -->
+        <div class="col-lg-3 col-md-6">
+          <div class="branch-card h-100 ai-effect">
+            <div class="branch-image">
+              <img src="images/channai.webp" alt="Chennai Branch" class="img-fluid">
+            </div>
+            <div class="branch-content">
+              <h4 class="branch-city">CHENNAI</h4>
+              <p class="branch-brief">Mount Road</p>
+              <p class="branch-detail">No 9, JV White House, 1st Floor, Blackers Road, Anna Salai, Chennai, Tamil Nadu 600002</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=No+9+JV+White+House+1st+Floor+Blackers+Road+Anna+Salai+Chennai+Tamil+Nadu+600002" 
+                 target="_blank" 
+                 class="btn-get-directions">
+                GET DIRECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 3: Shivamogga -->
+        <div class="col-lg-3 col-md-6">
+          <div class="branch-card h-100 ai-effect">
+            <div class="branch-image">
+              <img src="images/shivamogga.webp" alt="Shivamogga Branch" class="img-fluid">
+            </div>
+            <div class="branch-content">
+              <h4 class="branch-city">SHIVAMOGGA</h4>
+              <p class="branch-brief">NT Road, Muneshwara Building</p>
+              <p class="branch-detail">#05, NT Road, Muneshwara Building, Opposite to Karnataka Bank, Near Tempo Stand, Shivamogga 577202</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=05+NT+Road+Muneshwara+Building+Opposite+to+Karnataka+Bank+Near+Tempo+Stand+Shivamogga+577202" 
+                 target="_blank" 
+                 class="btn-get-directions">
+                GET DIRECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 4: Mangalore -->
+        <div class="col-lg-3 col-md-6">
+          <div class="branch-card h-100 ai-effect">
+            <div class="branch-image">
+              <img src="images/manglore.webp" alt="Mangalore Branch" class="img-fluid">
+            </div>
+            <div class="branch-content">
+              <h4 class="branch-city">MANGALORE</h4>
+              <p class="branch-brief">Balmatta Road</p>
+              <p class="branch-detail">Beauty Plaza Building, No. 14-4-501/24, 3rd Floor, Balmatta Road, Mangalore- 575001</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Beauty+Plaza+Building+No+14-4-501/24+3rd+Floor+Balmatta+Road+Mangalore+575001" 
+                 target="_blank" 
+                 class="btn-get-directions">
+                GET DIRECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 5: Davanagere -->
+        <div class="col-lg-3 col-md-6">
+          <div class="branch-card h-100 ai-effect">
+            <div class="branch-image">
+              <img src="images/davangere.webp" alt="Davanagere Branch" class="img-fluid">
+            </div>
+            <div class="branch-content">
+              <h4 class="branch-city">DAVANAGERE</h4>
+              <p class="branch-brief">Chigateri Hospital Road</p>
+              <p class="branch-detail">#29/9 Chigateri Hospital Road, Opp. Corporation Bank Near Vidyarti Bhavana Circle, Karnataka - 577002</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=29/9+Chigateri+Hospital+Road+Opp+Corporation+Bank+Near+Vidyarti+Bhavana+Circle+Karnataka+577002" 
+                 target="_blank" 
+                 class="btn-get-directions">
+                GET DIRECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 6: Raichur -->
+        <div class="col-lg-3 col-md-6">
+          <div class="branch-card h-100 ai-effect">
+            <div class="branch-image">
+              <img src="images/raichur.webp" alt="Raichur Branch" class="img-fluid">
+            </div>
+            <div class="branch-content">
+              <h4 class="branch-city">RAICHUR</h4>
+              <p class="branch-brief">Gunj Road</p>
+              <p class="branch-detail">12-10-18/1A, 1st Floor, Gunj Road, Near Vaikuntam Complex, Raichur - 584101</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=12-10-18/1A+1st+Floor+Gunj+Road+Near+Vaikuntam+Complex+Raichur+584101" 
+                 target="_blank" 
+                 class="btn-get-directions">
+                GET DIRECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="d-flex justify-content-center mt-4">
+        <div class="branch-pagination">
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Branches Section Styles */
+    .branches-section {
+      background-color: #faf9f4;
+    }
+
+    .branches-section h2 {
+      color: #333;
+      font-size: 2.5rem;
+    }
+
+    .branch-card {
+      background: rgba(255,255,255,0.7);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(139,105,20,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      /* allow card to fill the bootstrap column width (no max-width) */
+      position: relative;
+      backdrop-filter: blur(6px) saturate(120%);
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+
+    .branch-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .branch-image {
+      overflow: hidden;
+      height: 220px; /* increased image height to give images more prominence */
+    }
+
+    .branch-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .branch-card:hover .branch-image img {
+      transform: scale(1.05);
+    }
+
+    .branch-content {
+      padding: 8px 10px; /* further reduced padding to shrink content box */
+      min-height: 70px; /* ensure a small consistent content area */
+    }
+
+    .branch-city {
+      font-weight: 700;
+      font-size: 0.98rem; /* compact */
+      color: #2b2b2b;
+      margin-bottom: 6px;
+      letter-spacing: .4px;
+    }
+
+    .branch-brief {
+      font-weight: 600;
+      color: #666;
+      font-size: 0.88rem; /* slightly smaller */
+      margin-bottom: 4px;
+    }
+
+    .branch-detail {
+      font-size: 0.78rem; /* slightly smaller to reduce content height */
+      color: #6e6e6e;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      max-height: 2.8em; /* clamp addresses more tightly */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* AI-style animated gradient border and subtle glow */
+    .branch-card.ai-effect::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      z-index: 0;
+      background: linear-gradient(90deg, rgba(227,186,99,0.25), rgba(139,105,20,0.25), rgba(227,186,99,0.25));
+      filter: blur(8px);
+      opacity: 0.9;
+      border-radius: 14px;
+      pointer-events: none;
+      animation: aiGlow 6s linear infinite;
+    }
+
+    .branch-card .branch-image,
+    .branch-card .branch-content { position: relative; z-index: 2; }
+
+    @keyframes aiGlow {
+      0% { transform: translateX(-30%); opacity: 0.7 }
+      50% { transform: translateX(30%); opacity: 1 }
+      100% { transform: translateX(-30%); opacity: 0.7 }
+    }
+
+    /* Sheen effect */
+    .branch-card.ai-effect::after {
+      content: "";
+      position: absolute;
+      top: -60%;
+      left: -30%;
+      width: 60%;
+      height: 220%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.0) 100%);
+      transform: rotate(25deg);
+      z-index: 3;
+      pointer-events: none;
+      transition: transform 0.8s ease;
+    }
+
+    .branch-card:hover.ai-effect::after { transform: translateX(140%) rotate(25deg); }
+
+    .btn-get-directions {
+      display: inline-block;
+      background-color: #e3c663;
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 12px; /* smaller button to match compact content */
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .btn-get-directions:hover {
+      background-color: #d4b552;
+      color: #fff;
+    }
+
+    .branch-pagination {
+      display: flex;
+      gap: 8px;
+    }
+
+    .page-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .page-dot.active {
+      background-color: #8b6914;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .branches-section h2 {
+        font-size: 2rem;
+      }
+
+      .branch-content {
+        padding: 20px;
+      }
+    }
+  </style>
+
+  <script>
+    // Small JS to add a subtle 3D tilt and dynamic light position to .branch-card elements.
+    (function(){
+      const cards = document.querySelectorAll('.branch-card.ai-effect');
+      if(!cards.length) return;
+
+      cards.forEach(card => {
+        const rect = () => card.getBoundingClientRect();
+        let rafId = null;
+
+        function onMove(e){
+          const r = rect();
+          const px = (e.clientX - r.left) / r.width;
+          const py = (e.clientY - r.top) / r.height;
+          const rotateY = (px - 0.5) * 10; // tilt range
+          const rotateX = (0.5 - py) * 8;
+          const tx = (px - 0.5) * 6;
+          const ty = (py - 0.5) * 6;
+
+          if(rafId) cancelAnimationFrame(rafId);
+          rafId = requestAnimationFrame(()=>{
+            card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translate3d(${tx}px, ${ty}px, 0)`;
+            // change sheen position by moving pseudo-element using CSS variable
+            card.style.setProperty('--sheen-x', `${px * 100}%`);
+            card.style.setProperty('--sheen-y', `${py * 100}%`);
+          });
+        }
+
+        function onLeave(){
+          if(rafId) cancelAnimationFrame(rafId);
+          card.style.transform = '';
+          card.style.setProperty('--sheen-x', '50%');
+          card.style.setProperty('--sheen-y', '50%');
+        }
+
+        card.addEventListener('mousemove', onMove);
+        card.addEventListener('mouseleave', onLeave);
+        card.addEventListener('touchstart', onMove);
+        card.addEventListener('touchend', onLeave);
+      });
+    })();
+  </script>
+
+
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Instant Cash</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff !important;
+      color: #333333;
+      padding: 40px 0;
+    }
+
+    .contact-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 60px 0;
+    }
+
+    .contact-info h4 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .info-item {
+      margin-top: 20px;
+    }
+
+    .info-item .icon {
+      font-size: 22px;
+      color: #e60000;
+      margin-right: 10px;
+    }
+
+    .info-item span {
+      display: block;
+      font-weight: 600;
+      color: #e60000;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      margin-bottom: 5px;
+    }
+
+    .info-item p {
+      margin: 0;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* Form Styling */
+    .contact-form h3 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #6b2e17;
+      margin-bottom: 5px;
+    }
+
+    .form-control, .form-select {
+      border: 1.5px solid #6b2e17;
+      border-radius: 6px;
+      padding: 10px 15px;
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: #c47a4a;
+      box-shadow: none;
+    }
+
+    .btn-submit {
+      background-color: #6b2e17;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .btn-submit:hover {
+      background-color: #a44a27;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .contact-info {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Footer Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff !important;
+      color: #333333;
+    }
+
+    .footer {
+      background-color: rgb(206, 156, 31);
+      color: black;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-logo {
+      flex: 1 1 200px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .footer-logo h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .footer-info {
+      flex: 2 1 300px;
+      margin-bottom: 20px;
+    }
+
+    .footer-info p {
+      margin: 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .footer-info i {
+      color: #000000;
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-logo,
+      .footer-info {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo and Company Name -->
+      <div class="footer-logo">
+        <img src="images/LOGO (2).png" alt="Company Logo">
+        <h3>SriStar Gold</h3>
+      </div>
+
+      <!-- Company Details -->
+      <div class="footer-info">
+        <p><i class="fas fa-map-marker-alt"></i> కాపొరేట్ కార్యాలయం: 280/1, అన్నియమ్మ ఆర్కేడ్, సంపంగి రోడ్, 18వ క్రాస్ రోడ్, మల్లేశ్వరಂ, బెంగళూరు, కర్ణాటక - 560003</p>
+        <p><i class="fas fa-map-marker-alt"></i> Corp. Off: 280/1, Anniamma Arcade, Sampige Road, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560003</p>
+        <p><i class="fas fa-phone"></i> Contact: 6366333444</p>
+        <p><i class="fas fa-envelope"></i> support@sristargold.com</p>
+        <p><i class="fas fa-building"></i> Regd No: 9876543210 | GST: 36ABCDE1234F1Z5</p>
+      </div>
+    </div>
+  </footer>
+  </footer>
+
+  <!-- Floating contact buttons: WhatsApp and Call (green) -->
+  <style>
+    /* Floating contact container */
+    .floating-contact {
+      position: fixed;
+      left: 20px;
+      bottom: 90px;
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: left;
+      pointer-events: none; /* allow inner anchors to handle pointer events */
+    }
+
+    .fc-btn {
+      pointer-events: auto;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      transition: transform .14s ease, box-shadow .14s ease;
+    }
+
+    /* WhatsApp green */
+    .fc-btn.whatsapp {
+      background: #25D366; /* WhatsApp green */
+    }
+
+    /* Call button green (slightly darker) */
+    .fc-btn.call {
+      background: #28a745;
+    }
+
+    .fc-btn:hover,
+    .fc-btn:focus {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+      outline: none;
+    }
+
+  .fc-btn svg, .fc-btn i { width: 22px; height: 22px; font-size: 20px; display: inline-block; }
+
+    /* small screens: place horizontally near bottom-right */
+    @media (max-width: 480px) {
+      .floating-contact {
+        left: 14px;
+        bottom: 18px;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .fc-btn { width: 48px; height: 48px; }
+    }
+  </style>
+
+  <div class="floating-contact" aria-hidden="false">
+    <!-- Contact modal (in-page) -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Get Instant Cash</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 contact-info">
+                  <h4>Let us help you</h4>
+                  <h5 class="fw-bold">Contact us</h5>
+                  <p><a href="mailto:sristargoldcompany.com" class="text-dark text-decoration-none fw-semibold">sristargoldcompany.com</a></p>
+                  <div class="info-item d-flex">
+                    <div class="icon">📍</div>
+                    <div>
+                      <span>Work Station</span>
+                      <p>Corp. Off: 280/1, Anniamma Arcade, Sampige Road, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560003</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex">
+                    <div class="icon">⏰</div>
+                    <div>
+                      <span>Working Time</span>
+                      <p>Mon – Sat: 9:30am – 7:00pm</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex">
+                    <div class="icon">📞</div>
+                    <div>
+                      <span>Call us 24/7</span>
+                      <p>6366333444</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 contact-form">
+                  <h3>Get Instant Cash</h3>
+                  <form id="contactFormModal">
+                    <div class="mb-3">
+                      <label for="modal-name" class="form-label">Name:</label>
+                      <input type="text" id="modal-name" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="modal-number" class="form-label">Contact Number:</label>
+                      <input type="tel" id="modal-number" class="form-control" placeholder="Contact number" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="modal-type" class="form-label">Select Type:</label>
+                      <select id="modal-type" class="form-select" required>
+                        <option value="">Select an option</option>
+                        <option value="sell-gold">Sell Gold</option>
+                        <option value="buy-gold">Buy Gold</option>
+                        <option value="investment">Gold Investment</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="modal-state" class="form-label">Select Your State:</label>
+                      <select id="modal-state" class="form-select" required>
+                        <option value="">Select your state</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="tamilnadu">Tamil Nadu</option>
+                        <option value="andhra">Andhra Pradesh</option>
+                        <option value="telangana">Telangana</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WhatsApp button: update phone number in href (use country code, no + or 00) -->
+    <a class="fc-btn whatsapp" href="https://wa.me/6366333444" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <!-- Font Awesome WhatsApp icon -->
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Call button: updates to phone number in tel: link -->
+    <a class="fc-btn call" href="tel:6366333444" aria-label="Call us">
+      <!-- Font Awesome phone icon -->
+      <i class="fa fa-phone" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+
+  <script>
+    // handle modal form submit: show alert and close modal
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalForm = document.getElementById('contactFormModal');
+      if (modalForm) {
+        modalForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          alert('Thank you! Your details have been submitted successfully.');
+          modalForm.reset();
+          var modalEl = document.getElementById('contactModal');
+          var modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+          modal.hide();
+        });
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Styles for the gold rate form (preserve user's look) -->
+  <style>
+    .gold-rate-form { background-color: #fff4ef; border-radius: 10px; padding: 20px 25px; border: 1px solid #e6c3b2; }
+    .gold-rate-form h4 { color: #c0a23e; font-weight: bold; }
+    .gold-rate-form label { font-size: .9rem; font-weight: 700; color: #4a2e2e; }
+    .gold-rate-form .form-control, .gold-rate-form .form-select { border: 1px solid #b97d60; border-radius: 6px; height: 45px; }
+    .gold-rate-form .submit-btn { background-color: #c0a23e; color: #fff; font-weight: 700; width: 100%; border-radius: 6px; }
+    .gold-rate-form .submit-btn:hover { background-color: #b5942e; }
+  </style>
+
+  <!-- Gold rate modal (user-provided form) -->
+  <div class="modal fade" id="goldRateModal" tabindex="-1" aria-labelledby="goldRateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="gold-rate-form shadow">
+            <h4 class="text-center mb-3">Know Todays Gold Rate</h4>
+            <form id="goldForm">
+              <div class="mb-3">
+                <label for="name">NAME:</label>
+                <input type="text" id="name" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <label for="contact">CONTACT NUMBER:</label>
+                <input type="tel" id="contact" class="form-control" placeholder="Contact number" required>
+              </div>
+              <div class="mb-3">
+                <label for="type">SELECT TYPE:</label>
+                <select id="type" class="form-select" required>
+                  <option value="">Select an option</option>
+                  <option value="gold">Gold</option>
+                  <option value="silver">Silver</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="state">SELECT YOUR STATE:</label>
+                <select id="state" class="form-select" required>
+                  <option value="">Select your state</option>
+                  <option value="maharashtra">Maharashtra</option>
+                  <option value="karnataka">Karnataka</option>
+                  <option value="tamilnadu">Tamil Nadu</option>
+                  <option value="gujarat">Gujarat</option>
+                </select>
+              </div>
+              <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Auto-show goldRateModal on page load and re-open 5s after it's closed
+    (function () {
+      // Run after Bootstrap JS loads
+      var initGoldModal = function () {
+        var goldEl = document.getElementById('goldRateModal');
+        if (!goldEl) return;
+
+        var goldModal = new bootstrap.Modal(goldEl, { backdrop: true, keyboard: true });
+        // Show once when page loads
+        goldModal.show();
+
+        var reopenTimer = null;
+        goldEl.addEventListener('hidden.bs.modal', function () {
+          // Clear any existing timer then set a new one for 5 seconds
+          if (reopenTimer) {
+            clearTimeout(reopenTimer);
+          }
+          reopenTimer = setTimeout(function () {
+            goldModal.show();
+          }, 5000);
+        });
+      };
+
+      // If DOMContentLoaded already fired, initialize immediately; otherwise wait.
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        // Defer to ensure bootstrap is defined
+        setTimeout(initGoldModal, 100);
+      } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(initGoldModal, 100); });
+      }
+    })();
+  </script>
+
+  <script>
+    // Ensure the gold form submission hides the modal (reopen timer will re-show it)
+    document.addEventListener('DOMContentLoaded', function () {
+      var goldForm = document.getElementById('goldForm');
+      if (!goldForm) return;
+      goldForm.addEventListener('submit', function (e) {
+        // The main auto-show script already handles showing again after 5s on hide.
+        // Prevent default, show alert, reset and hide modal so the reopen timer fires.
+        e.preventDefault();
+        alert('Form submitted successfully!');
+        goldForm.reset();
+        var goldEl = document.getElementById('goldRateModal');
+        var goldModal = bootstrap.Modal.getInstance(goldEl) || new bootstrap.Modal(goldEl);
+        goldModal.hide();
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

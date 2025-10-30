@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Instant Cash</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #000;
+      padding: 40px 0;
+    }
+
+    .contact-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 60px 0;
+      position: relative;
+    }
+
+    /* Close button (top-right) */
+    .close-contact {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .contact-info h4 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .info-item {
+      margin-top: 20px;
+    }
+
+    .info-item .icon {
+      font-size: 22px;
+      color: #e60000;
+      margin-right: 10px;
+    }
+
+    .info-item span {
+      display: block;
+      font-weight: 600;
+      color: #e60000;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      margin-bottom: 5px;
+    }
+
+    .info-item p {
+      margin: 0;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* Form Styling */
+    .contact-form h3 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #6b2e17;
+      margin-bottom: 5px;
+    }
+
+    .form-control, .form-select {
+      border: 1.5px solid #6b2e17;
+      border-radius: 6px;
+      padding: 10px 15px;
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: #c47a4a;
+      box-shadow: none;
+    }
+
+    .btn-submit {
+      background-color: #6b2e17;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .btn-submit:hover {
+      background-color: #a44a27;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .contact-info {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-section">
+    <div class="container">
+      <button class="close-contact" id="closeBtn" aria-label="Close contact">✖</button>
+      <div class="row align-items-start">
+        
+        <!-- Left Column: Contact Info -->
+        <div class="col-md-5 contact-info">
+          <h4>Let us help you</h4>
+          <h5 class="fw-bold">Contact us</h5>
+          <p><a href="mailto:Enquiry@atticagoldcompany.com" class="text-dark text-decoration-none fw-semibold">Enquiry@atticagoldcompany.com</a></p>
+          
+          <div class="info-item d-flex">
+            <div class="icon">📍</div>
+            <div>
+              <span>Work Station</span>
+              <p>Building no 1, Indian Express Building 4th floor, Balekundri Circle, Bengaluru, Karnataka 560001</p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex">
+            <div class="icon">⏰</div>
+            <div>
+              <span>Working Time</span>
+              <p>Mon – Fri: 9:30am – 7:00pm</p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex">
+            <div class="icon">📞</div>
+            <div>
+              <span>Call us 24/7</span>
+              <p>8880300300</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="col-md-7 contact-form">
+          <h3>Get Instant Cash</h3>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" id="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Contact Number:</label>
+              <input type="tel" id="number" class="form-control" placeholder="Contact number" required>
+            </div>
+            <div class="mb-3">
+              <label for="type" class="form-label">Select Type:</label>
+              <select id="type" class="form-select" required>
+                <option value="">Select an option</option>
+                <option value="sell-gold">Sell Gold</option>
+                <option value="buy-gold">Buy Gold</option>
+                <option value="investment">Gold Investment</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="state" class="form-label">Select Your State:</label>
+              <select id="state" class="form-select" required>
+                <option value="">Select your state</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="andhra">Andhra Pradesh</option>
+                <option value="telangana">Telangana</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Close button behaviour: close window when opened by script, otherwise go back to home
+    document.getElementById('closeBtn').addEventListener('click', function () {
+      try {
+        if (window.opener) {
+          window.close();
+        } else {
+          // if not opened by script, redirect back to home
+          window.location.href = 'home.html';
+        }
+      } catch (e) {
+        window.location.href = 'home.html';
+      }
+    });
+
+    // Simple JS form handler
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you! Your details have been submitted successfully.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
